@@ -1,4 +1,4 @@
-var Dictionary = (function() {
+var Dictionary = (function(originalDictionary) {
 
   var southernDictionary = {
     "merry":"Mayreey", 
