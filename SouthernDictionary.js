@@ -1,11 +1,11 @@
 var Dictionary = (function(originalDictionary) {
 
   var southernDictionary = {
-    "merry":"Mayreey", 
-    "christmas":"Creesmuhs", 
+    "merry":"mayreey", 
+    "christmas":"creesmuhs", 
     "and":"ayn'", 
-    "happy":"Heppy", 
-    "new":"Nyew", 
-    "year":"Yeer"
+    "happy":"heppy", 
+    "new":"nyew", 
+    "year":"yeer"
   }
 });(Dictionary);
