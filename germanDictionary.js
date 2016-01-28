@@ -10,7 +10,7 @@ var Dictionary = (function() {
     var keyArray = Object.keys(germanDictionary);
     console.log("keyArray", keyArray);
     for (var i = 0; i < userStringToArray.length; i++) {
-      if (keyArray.indexOf(userStringToArray[1]) !== -1) {
+      if (keyArray.indexOf(userStringToArray[i]) !== -1) {
         userStringToArray[i] = germanDictionary[userStringToArray[i]];
       }
     };
