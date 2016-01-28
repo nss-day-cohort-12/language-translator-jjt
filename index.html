@@ -8,24 +8,24 @@
 
 <body>
 
-
-
   <div>
     <fieldset>
       <legend>Translate a Message:</legend>
       <label for="textArea">Message:</label>
-      <textarea id="user-input"></textarea>
+      <textarea id="user-input" cols="30" rows="10"></textarea>
 
       <label for="select">Choose a Language:</label>
-      <select>
-        <option>German</option>
-        <option>Spanish</option>
-        <option>Southern</option>
+      <select id="selected-language">
+        <option value="German">German</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Southern">Southern</option>
       </select>
 
       <button id="translate-button">Translate</button>
     </fieldset>
   </div>
+
+  <div id="output-div"></div>
 
 <script src="app.js"></script>
 <script src="germanDictionary.js"></script>
