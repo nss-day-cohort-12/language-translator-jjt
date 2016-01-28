@@ -1,0 +1,22 @@
+body {
+  font-family: Arial;
+}
+
+.main {
+  margin: 0 auto;
+  width: 266px;
+  padding: 16px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+#output-div {
+  margin: 10px 0;
+}
+
+#translate-button {
+  width: 100%;
+  margin: 10px 0 0;
+}
