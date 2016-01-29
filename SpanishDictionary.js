@@ -1,8 +1,8 @@
 var Dictionary = (function(originalDictionary){
 	var spanishDictionary = {"merry": "feliz", "christmas": "navidad", "and": "y", "happy": "próspero", "new": "nuevo", "year": "año"};
 
-	originalDictionary.translateToSpanish = function() {
-		var userStringToArray = userInputString.toLowerCase().split(" ");
+	originalDictionary.translateToSpanish = function(textString) {
+		var userStringToArray = textString.toLowerCase().split(" ");
 		console.log("userStringToArray", userStringToArray);
 		var keyArray = Object.keys(spanishDictionary);
 		console.log("keyArray", keyArray);
@@ -12,9 +12,9 @@ var Dictionary = (function(originalDictionary){
 			}
 		};
 		console.log("userStringToArray", userStringToArray);
-		var translatedString = userStringToArray.join(" ");
+		translatedString = userStringToArray.join(" ");
 
-		outputElement.innerHTML = translatedString;
+		return translatedString;
 	}
 	return originalDictionary;
 })(Dictionary);

@@ -4,8 +4,8 @@ var Dictionary = (function() {
 
   return {
 
-  translateToGerman: function() {
-    var userStringToArray = userInputString.toLowerCase().split(" ");
+  translateToGerman: function(textString) {
+    var userStringToArray = textString.toLowerCase().split(" ");
     console.log("userStringToArray", userStringToArray);
     var keyArray = Object.keys(germanDictionary);
     console.log("keyArray", keyArray);
@@ -15,9 +15,9 @@ var Dictionary = (function() {
       }
     };
     console.log("userStringToArray", userStringToArray);
-    var translatedString = userStringToArray.join(" ");
+    translatedString = userStringToArray.join(" ");
 
-    outputElement.innerHTML = translatedString;
+    return translatedString;
   }
 }
   
