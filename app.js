@@ -2,7 +2,7 @@ var outputElement = document.getElementById("output-div");
 var userInputElement = document.getElementById("user-input");
 var userInputString = "";
 var selectedLanguage; 
-
+var translatedString;
 
 
 //Capture which language was selected
@@ -30,11 +30,14 @@ document.getElementById("translate-button").addEventListener("click", function()
 
 document.getElementById("translate-button"),addEventListener("click", function() {
 		if (selectedLanguage === "German") {
-			Dictionary.translateToGerman();
+			Dictionary.translateToGerman(userInputString);
+			outputElement.innerHTML = translatedString;
 		} else if (selectedLanguage === "Spanish") {
-			Dictionary.translateToSpanish();
+			Dictionary.translateToSpanish(userInputString);
+			outputElement.innerHTML = translatedString;
 		} else if (selectedLanguage === "Southern") {
-			Dictionary.translateToSouthern();
+			Dictionary.translateToSouthern(userInputString);
+			outputElement.innerHTML = translatedString;
 		} else {
 			outputElement.innerHTML = userInputString;
 		}	
